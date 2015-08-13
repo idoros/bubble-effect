@@ -1,0 +1,21 @@
+{
+  "name": "reaction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "webpack-dev-server --progress --hot --inline --no-colors"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "webpack": "^1.11.0"
+  }
+}
