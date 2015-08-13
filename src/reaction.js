@@ -63,7 +63,7 @@ class Reaction extends React.Component {
 			{ times:1, color: "white"}
 		];
 		var size = this.props.size || 50;
-		this.dots = new Array(10).join(',').split(',').map(function(){
+		this.dots = new Array(50).join(',').split(',').map(function(){
 			return new Point(size);
 		});
 		var css = '';
@@ -94,7 +94,7 @@ class Reaction extends React.Component {
 			var halfSize = size / 2;
 			var top = cords.y - halfSize;
 			var left = cords.x - halfSize;
-			return <div key={groupId+"-"+index} className={"dot dot" + index} style={{
+			return <div key={groupId+"-"+index} className={"dot dot" + groupId} style={{
 				transform: `translate3d(${left}px, ${top}px, 0px)`
 			}}></div>;
 		})
